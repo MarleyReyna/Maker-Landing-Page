@@ -5,7 +5,7 @@ import logo from './logo.svg';
 const Header = () => {
     return (
         <header>
-            <img src={logo} alt=''></img>
+            <img src={logo} alt='' aria-hidden='true'></img>
         </header>
     );
 }

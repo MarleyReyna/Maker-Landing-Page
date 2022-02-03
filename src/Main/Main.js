@@ -37,7 +37,7 @@ const Main = () => {
                         the rat race or set up a side hustle, 
                         we’ve got you covered.
                     </p>
-                    <img className='mouse' src={mouse} alt=''/>
+                    <img className='mouse' src={mouse} alt='' aria-hidden='true'/>
                 </div>
                 <div className='right-ill'/>
             </section>
@@ -48,7 +48,7 @@ const Main = () => {
                             <li key={index} 
                             className={item.class}> 
                                 <div className='img-box'>
-                                    <img src={item.picture} alt=''/>
+                                    <img src={item.picture} alt='' aria-hidden='true'/>
                                 </div>
                                 <div className='text'>
                                     <h2>{item.title}</h2>
@@ -83,7 +83,7 @@ const Main = () => {
                             {freePlan.map((item, index) =>{
                                 return(
                                     <li key={index} >
-                                        <img src={check} alt=''/>
+                                        <img src={check} alt='' aria-hidden='true'/>
                                         <p>{item}</p>
                                     </li>
                                 )
@@ -105,7 +105,7 @@ const Main = () => {
                             {paidPlan.map((item, index) =>{
                                 return(
                                     <li key={index} >
-                                        <img src={check} alt=''/>
+                                        <img src={check} alt='' aria-hidden='true'/>
                                         <p>{item}</p>
                                     </li>
                                 )
