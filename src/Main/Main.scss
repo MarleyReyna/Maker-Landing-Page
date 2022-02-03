@@ -1,0 +1,514 @@
+@keyframes mouseMovement {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+main {
+  font-family: Manrope;
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 0;
+
+    .left-ill {
+      width: 25.5rem;
+      height: 28.6875rem;
+      background: url("./Images/illustration-hero-left.svg") no-repeat center;
+      background-size: contain;
+      transform: translateX(-5.59375rem);
+    }
+
+    .text-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url("./Images/bg-hero-squiggle.svg") center no-repeat;
+      background-size: contain;
+
+      h1 {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 17ch;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
+
+        span {
+          color: #3ee9e5;
+        }
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: #777f98;
+        max-width: 60ch;
+        margin-bottom: 4rem;
+      }
+
+      .mouse {
+        animation: mouseMovement 3s ease infinite;
+      }
+    }
+
+    .right-ill {
+      width: 24.75rem;
+      height: 27.75rem;
+      background: url("./Images/illustration-hero-right.svg") no-repeat center;
+      background-size: contain;
+      transform: translateX(6.03125rem);
+    }
+  }
+
+  .information-list {
+    margin: 12.625rem 0;
+    padding: 0rem 2rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        list-style: none;
+        margin-right: 1.875rem;
+
+        .img-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10rem;
+          height: 10.25rem;
+          border-radius: 45px;
+          background-color: #093f68;
+        }
+
+        .text {
+          h2 {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 25px;
+            color: #ffffff;
+            margin: 3rem 0 1.4375rem;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #777f98;
+            max-width: 25ch;
+          }
+        }
+      }
+
+      .finance {
+        margin: 3rem 0 0 0;
+      }
+
+      .work {
+        margin: 3rem 0 0 0;
+      }
+    }
+  }
+
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9.4375rem;
+
+    h3 {
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+      text-align: center;
+      max-width: 55ch;
+      margin-bottom: 6.5625rem;
+      color: #777f98;
+    }
+
+    .plans {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .free {
+        background: #093f68;
+        border-radius: 8px;
+        padding: 0 2.375rem 2.25rem;
+        margin-right: 1.875rem;
+
+        .free-image {
+          position: absolute;
+          transform: translateY(-1.4375rem);
+        }
+
+        h4 {
+          font-size: 18px;
+          line-height: 25px;
+          font-weight: 800;
+          margin: 3.0625rem 0 1.1875rem;
+          color: #ffffff;
+        }
+
+        p {
+          max-width: 39.3ch;
+          text-align: initial;
+          margin-bottom: 1.5rem;
+          color: white;
+          opacity: 0.6;
+        }
+
+        h5 {
+          font-size: 40px;
+          line-height: 55px;
+          font-weight: 800;
+          margin-bottom: 1.1875rem;
+          color: #ffffff;
+        }
+
+        ul {
+          li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+
+            img {
+              margin-right: 1rem;
+              filter: invert(97%) sepia(81%) saturate(6915%) hue-rotate(134deg)
+                brightness(97%) contrast(88%);
+            }
+
+            p {
+              margin-bottom: 0;
+              color: white;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .paid {
+        background: #3ee9e5;
+        border-radius: 8px;
+        padding: 0 38px;
+
+        .paid-image {
+          position: absolute;
+          transform: translateY(-2.0625rem);
+        }
+
+        h4 {
+          font-size: 18px;
+          line-height: 25px;
+          font-weight: 800;
+          margin: 3.8125rem 0 1.1875rem;
+          color: #080c20;
+        }
+
+        p {
+          text-align: initial;
+          max-width: 39.3ch;
+          margin-bottom: 1.5rem;
+          color: #080c20;
+          opacity: 0.6;
+        }
+
+        h5 {
+          font-size: 40px;
+          line-height: 55px;
+          font-weight: 800;
+          margin-bottom: 1.1875rem;
+          color: #080c20;
+
+          span {
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 500;
+            vertical-align: super;
+            color: #080c20;
+            opacity: 0.6;
+          }
+        }
+
+        ul {
+          margin-bottom: 3.75rem;
+
+          li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+
+            img {
+              margin-right: 1rem;
+            }
+
+            p {
+              margin-bottom: 0;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 62.5rem) {
+  main {
+    .hero {
+      .left-ill {
+        width: 314px;
+        height: 356px;
+        transform: translateX(-0.45rem);
+        background-size: cover;
+        background-position: right;
+      }
+
+      .text-div {
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        p {
+          max-width: 99.75ch;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .right-ill {
+        width: 19.8125rem;
+        height: 22.25rem;
+        transform: translate(0.5rem);
+        background-size: 19.8125rem 22.25rem;
+        background-position: left;
+      }
+    }
+
+    .information-list {
+      display: flex;
+      justify-content: center;
+      margin: 6.8125rem 0 8.8125rem;
+      padding: 0;
+
+      ul {
+        width: fit-content;
+        flex-direction: column;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0 0 2.5rem;
+
+          .img-box {
+            width: 7.5rem;
+            height: 7.75rem;
+            margin-right: 3.4375rem;
+
+            img {
+              transform: scale(0.75);
+            }
+          }
+
+          .text {
+            max-width: 340px;
+            h2 {
+              margin-top: 0;
+              margin-bottom: 11px;
+            }
+
+            p {
+              max-width: 40ch;
+            }
+          }
+        }
+
+        .passion {
+          margin-left: 3.625rem;
+        }
+
+        .lifestyle {
+          margin-left: 3.625rem;
+        }
+
+        .finance {
+          margin-top: 0;
+          margin-bottom: 2.5rem;
+        }
+
+        .work {
+          margin: 0;
+        }
+      }
+    }
+
+    .pricing {
+      margin-top: 0;
+      margin-bottom: 7.4375rem;
+
+      h3 {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 1.6875rem;
+      }
+
+      p {
+        margin-bottom: 4.9375rem;
+      }
+
+      .plans {
+        flex-direction: column;
+
+        .free {
+          margin-right: 0;
+          margin-bottom: 65px;
+          margin: 0 0 4.0625rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 37.5rem) {
+  main {
+    .hero {
+      flex-direction: column;
+      padding-bottom: 9rem;
+
+      .left-ill {
+        width: 100%;
+        max-height: 14.5625rem;
+        min-width: 25.625rem;
+        background-position: center;
+        background-image: url("./Images/illustration-hero-mobile.png");
+        background-size: contain;
+        background-repeat: initial;
+        transform: translateX(0);
+        margin-bottom: 3rem;
+      }
+
+      .text-div {
+        padding: 0 1.5rem;
+        background-image: none;
+
+        h1 {
+          max-width: 11.5ch;
+        }
+
+        p {
+          max-width: 40ch;
+        }
+      }
+
+      .right-ill {
+        display: none;
+      }
+    }
+
+    .information-list {
+      margin: 0 0 9rem;
+
+      ul {
+        padding: 0 1.5rem;
+
+        li {
+          flex-direction: column;
+          text-align: center;
+          margin-bottom: 3.5rem;
+
+          .img-box {
+            margin-right: 0;
+          }
+
+          .text {
+            h2 {
+              margin-top: 2rem;
+            }
+          }
+        }
+
+        .lifestyle {
+          margin-left: 0;
+        }
+
+        .passion {
+          margin-left: 0;
+        }
+
+        .work {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .pricing {
+      margin: 0 0 9rem;
+
+      h3 {
+        line-height: 40px;
+        margin-bottom: 1.6875;
+      }
+
+      .make-money {
+        padding: 0 1.5rem;
+        margin-bottom: 4.9375rem;
+      }
+
+      .plans {
+        .free {
+          padding: 0 1.8125rem 1.375rem 1.875rem;
+
+          p {
+            max-width: 28.541ch;
+          }
+
+          ul {
+            li {
+              p {
+                max-width: 30ch;
+              }
+            }
+          }
+        }
+
+        .paid {
+          padding: 0 1.8125rem 1.25rem 1.875rem;
+
+          p {
+            max-width: 28.541ch;
+            margin-bottom: 1.625rem;
+          }
+
+          ul {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

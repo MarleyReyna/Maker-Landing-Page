@@ -1,0 +1,24 @@
+header {
+  img {
+    margin: 5.0625rem 0 7.125rem 10.3125rem;
+  }
+}
+
+@media only screen and (max-width: 62.5rem) {
+  header {
+    img {
+      margin: 3rem 0 77px 2.4375rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 37.5rem) {
+  header {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin: 2.5rem 0 4.09375rem;
+    }
+  }
+}
